@@ -1,7 +1,7 @@
 [
   {
     "specType": "ENTITY",
-    "fullName": "org.modeldd.hortacasa.domain.entities.Usuario",
+    "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario",
     "shortName": "Usuario",
     "classAnnotations": [
       {
@@ -23,7 +23,7 @@
     "fieldSpecs": [
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.id",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.id",
         "shortName": "id",
         "typeFullName": "java.lang.Integer",
         "typeShortName": "Integer",
@@ -33,7 +33,7 @@
             "fullName": "javax.persistence.Id",
             "shortName": "Id",
             "annotatedMetaType": "FIELD",
-            "parameters": []
+            "parameters": null
           },
           {
             "specType": "ANNOTATION",
@@ -43,19 +43,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "strategy",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.GenerationType",
                 "shortEnumName": "GenerationType",
                 "enumValue": "AUTO"
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "generator",
-                "multiple": false,
-                "stringValue": ""
               }
             ]
           }
@@ -63,7 +63,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.login",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.login",
         "shortName": "login",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -76,13 +76,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -97,8 +90,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 32
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -111,24 +118,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 32
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -139,10 +132,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -154,19 +154,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               }
             ]
           }
@@ -174,7 +174,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.nombre",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.nombre",
         "shortName": "nombre",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -187,13 +187,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -208,8 +201,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 32
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -222,24 +229,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 32
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -250,10 +243,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -265,19 +265,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               }
             ]
           }
@@ -285,7 +285,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.apellidos",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.apellidos",
         "shortName": "apellidos",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -298,13 +298,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -319,8 +312,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 64
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -333,24 +340,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 64
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -361,10 +354,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -376,19 +376,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               }
             ]
           }
@@ -396,7 +396,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.email",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.email",
         "shortName": "email",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -409,13 +409,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -430,8 +423,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 96
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -444,24 +451,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 96
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -472,10 +465,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -487,19 +487,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               }
             ]
           }
@@ -507,7 +507,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.salt",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.salt",
         "shortName": "salt",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -520,13 +520,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -541,8 +534,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 64
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -555,24 +562,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 64
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -583,10 +576,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -598,19 +598,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -618,7 +618,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.password",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.password",
         "shortName": "password",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -631,13 +631,6 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "columnDefinition",
                 "multiple": false,
@@ -652,8 +645,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 256
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -666,24 +673,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 256
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -694,10 +687,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -709,19 +709,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -729,7 +729,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.fechaCreacion",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.fechaCreacion",
         "shortName": "fechaCreacion",
         "typeFullName": "java.util.Calendar",
         "typeShortName": "Calendar",
@@ -742,19 +742,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               }
             ]
           },
@@ -781,13 +781,6 @@
             "shortName": "Column",
             "annotatedMetaType": "FIELD",
             "parameters": [
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": true
-              },
               {
                 "specType": "PARAMETER",
                 "parameterType": "STRING",
@@ -804,8 +797,22 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 255
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
+                "parameterName": "nullable",
                 "multiple": false,
                 "booleanValue": true
               },
@@ -818,24 +825,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "name",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "INTEGER",
-                "parameterName": "length",
+                "parameterName": "scale",
                 "multiple": false,
-                "integerValue": 255
+                "integerValue": 0
               },
               {
                 "specType": "PARAMETER",
@@ -846,10 +839,17 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "INTEGER",
-                "parameterName": "scale",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
                 "multiple": false,
-                "integerValue": 0
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -857,7 +857,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.fechaUltimoLogin",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.fechaUltimoLogin",
         "shortName": "fechaUltimoLogin",
         "typeFullName": "java.util.Calendar",
         "typeShortName": "Calendar",
@@ -870,19 +870,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           },
@@ -907,7 +907,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.autorizaciones",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario.autorizaciones",
         "shortName": "autorizaciones",
         "typeFullName": "java.util.List",
         "typeShortName": "List",
@@ -918,22 +918,6 @@
             "shortName": "OneToMany",
             "annotatedMetaType": "FIELD",
             "parameters": [
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "mappedBy",
-                "multiple": false,
-                "stringValue": "usuario"
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "ENUM",
-                "parameterName": "fetch",
-                "multiple": false,
-                "fullEnumName": "javax.persistence.FetchType",
-                "shortEnumName": "FetchType",
-                "enumValue": "LAZY"
-              },
               {
                 "specType": "PARAMETER",
                 "parameterType": "ENUM",
@@ -948,11 +932,19 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "CLASS",
-                "parameterName": "targetEntity",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
                 "multiple": false,
-                "fullClassName": "void",
-                "shortClassName": "void"
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "LAZY"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "mappedBy",
+                "multiple": false,
+                "stringValue": "usuario"
               },
               {
                 "specType": "PARAMETER",
@@ -960,6 +952,14 @@
                 "parameterName": "orphanRemoval",
                 "multiple": false,
                 "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "CLASS",
+                "parameterName": "targetEntity",
+                "multiple": false,
+                "fullClassName": "void",
+                "shortClassName": "void"
               }
             ]
           }
@@ -970,7 +970,7 @@
   },
   {
     "specType": "ENTITY",
-    "fullName": "org.modeldd.hortacasa.domain.entities.Rol",
+    "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol",
     "shortName": "Rol",
     "classAnnotations": [
       {
@@ -992,7 +992,7 @@
     "fieldSpecs": [
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.id",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol.id",
         "shortName": "id",
         "typeFullName": "java.lang.Integer",
         "typeShortName": "Integer",
@@ -1002,7 +1002,7 @@
             "fullName": "javax.persistence.Id",
             "shortName": "Id",
             "annotatedMetaType": "FIELD",
-            "parameters": []
+            "parameters": null
           },
           {
             "specType": "ANNOTATION",
@@ -1012,19 +1012,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "strategy",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.GenerationType",
                 "shortEnumName": "GenerationType",
                 "enumValue": "AUTO"
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "generator",
-                "multiple": false,
-                "stringValue": ""
               }
             ]
           }
@@ -1032,7 +1032,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.nombre",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol.nombre",
         "shortName": "nombre",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -1045,19 +1045,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -1065,7 +1065,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.rolinterno",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol.rolinterno",
         "shortName": "rolinterno",
         "typeFullName": "java.lang.String",
         "typeShortName": "String",
@@ -1078,19 +1078,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "fetch",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.FetchType",
                 "shortEnumName": "FetchType",
                 "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -1098,7 +1098,7 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.autorizaciones",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol.autorizaciones",
         "shortName": "autorizaciones",
         "typeFullName": "java.util.List",
         "typeShortName": "List",
@@ -1109,22 +1109,6 @@
             "shortName": "OneToMany",
             "annotatedMetaType": "FIELD",
             "parameters": [
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "mappedBy",
-                "multiple": false,
-                "stringValue": "rol"
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "ENUM",
-                "parameterName": "fetch",
-                "multiple": false,
-                "fullEnumName": "javax.persistence.FetchType",
-                "shortEnumName": "FetchType",
-                "enumValue": "LAZY"
-              },
               {
                 "specType": "PARAMETER",
                 "parameterType": "ENUM",
@@ -1139,11 +1123,19 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "CLASS",
-                "parameterName": "targetEntity",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
                 "multiple": false,
-                "fullClassName": "void",
-                "shortClassName": "void"
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "LAZY"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "mappedBy",
+                "multiple": false,
+                "stringValue": "rol"
               },
               {
                 "specType": "PARAMETER",
@@ -1151,6 +1143,14 @@
                 "parameterName": "orphanRemoval",
                 "multiple": false,
                 "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "CLASS",
+                "parameterName": "targetEntity",
+                "multiple": false,
+                "fullClassName": "void",
+                "shortClassName": "void"
               }
             ]
           }
@@ -1161,7 +1161,7 @@
   },
   {
     "specType": "ENTITY",
-    "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion",
+    "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Autorizacion",
     "shortName": "Autorizacion",
     "classAnnotations": [
       {
@@ -1183,7 +1183,7 @@
     "fieldSpecs": [
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.id",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Autorizacion.id",
         "shortName": "id",
         "typeFullName": "java.lang.Integer",
         "typeShortName": "Integer",
@@ -1193,7 +1193,7 @@
             "fullName": "javax.persistence.Id",
             "shortName": "Id",
             "annotatedMetaType": "FIELD",
-            "parameters": []
+            "parameters": null
           },
           {
             "specType": "ANNOTATION",
@@ -1203,19 +1203,19 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "ENUM",
                 "parameterName": "strategy",
                 "multiple": false,
                 "fullEnumName": "javax.persistence.GenerationType",
                 "shortEnumName": "GenerationType",
                 "enumValue": "AUTO"
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "generator",
-                "multiple": false,
-                "stringValue": ""
               }
             ]
           }
@@ -1223,9 +1223,9 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.usuario",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Autorizacion.usuario",
         "shortName": "usuario",
-        "typeFullName": "org.modeldd.hortacasa.domain.entities.Usuario",
+        "typeFullName": "org.modeldd.stealmodel_jpa.domain.entities.Usuario",
         "typeShortName": "Usuario",
         "fieldAnnotations": [
           {
@@ -1236,10 +1236,12 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
+                "parameterType": "ENUM",
+                "parameterName": "cascade",
+                "multiple": true,
+                "fullEnumName": "javax.persistence.CascadeType",
+                "shortEnumName": "CascadeType",
+                "enumValues": []
               },
               {
                 "specType": "PARAMETER",
@@ -1252,12 +1254,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "ENUM",
-                "parameterName": "cascade",
-                "multiple": true,
-                "fullEnumName": "javax.persistence.CascadeType",
-                "shortEnumName": "CascadeType",
-                "enumValues": []
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1278,16 +1278,9 @@
               {
                 "specType": "PARAMETER",
                 "parameterType": "STRING",
-                "parameterName": "referencedColumnName",
+                "parameterName": "columnDefinition",
                 "multiple": false,
                 "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1328,31 +1321,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "columnDefinition",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
                 "parameterName": "insertable",
                 "multiple": false,
                 "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1363,10 +1335,38 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "referencedColumnName",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "table",
                 "multiple": false,
                 "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
@@ -1374,9 +1374,9 @@
       },
       {
         "specType": "FIELD",
-        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.rol",
+        "fullName": "org.modeldd.stealmodel_jpa.domain.entities.Autorizacion.rol",
         "shortName": "rol",
-        "typeFullName": "org.modeldd.hortacasa.domain.entities.Rol",
+        "typeFullName": "org.modeldd.stealmodel_jpa.domain.entities.Rol",
         "typeShortName": "Rol",
         "fieldAnnotations": [
           {
@@ -1387,10 +1387,12 @@
             "parameters": [
               {
                 "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "optional",
-                "multiple": false,
-                "booleanValue": false
+                "parameterType": "ENUM",
+                "parameterName": "cascade",
+                "multiple": true,
+                "fullEnumName": "javax.persistence.CascadeType",
+                "shortEnumName": "CascadeType",
+                "enumValues": []
               },
               {
                 "specType": "PARAMETER",
@@ -1403,12 +1405,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "ENUM",
-                "parameterName": "cascade",
-                "multiple": true,
-                "fullEnumName": "javax.persistence.CascadeType",
-                "shortEnumName": "CascadeType",
-                "enumValues": []
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1429,16 +1429,9 @@
               {
                 "specType": "PARAMETER",
                 "parameterType": "STRING",
-                "parameterName": "referencedColumnName",
+                "parameterName": "columnDefinition",
                 "multiple": false,
                 "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "nullable",
-                "multiple": false,
-                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1479,31 +1472,10 @@
               },
               {
                 "specType": "PARAMETER",
-                "parameterType": "STRING",
-                "parameterName": "columnDefinition",
-                "multiple": false,
-                "stringValue": ""
-              },
-              {
-                "specType": "PARAMETER",
                 "parameterType": "BOOLEAN",
                 "parameterName": "insertable",
                 "multiple": false,
                 "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "updatable",
-                "multiple": false,
-                "booleanValue": true
-              },
-              {
-                "specType": "PARAMETER",
-                "parameterType": "BOOLEAN",
-                "parameterName": "unique",
-                "multiple": false,
-                "booleanValue": false
               },
               {
                 "specType": "PARAMETER",
@@ -1514,10 +1486,38 @@
               },
               {
                 "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "referencedColumnName",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
                 "parameterType": "STRING",
                 "parameterName": "table",
                 "multiple": false,
                 "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
               }
             ]
           }
