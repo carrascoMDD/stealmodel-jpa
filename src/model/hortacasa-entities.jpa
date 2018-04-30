@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="org.modeldd.hortacasa" v="4.4" rws="_151970502192868" Pws="_151970502192868" cws="_151970502192868" persistenceUnitName="HORTACASAPU" ee="JAVA_EE_8" sm="true" smpkg="org.modeldd.hortacasa.metamodel" xs="false" id="_151970502192867" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="org.modeldd.stealmodel_jpa" v="4.4" rws="_151970502192868" Pws="_151970502192868" cws="_151970502192868" persistenceUnitName="HORTACASAPU" ee="JAVA_EE_8" sm="true" smpkg="org.modeldd.stealmodel_jpa.metamodel" xs="false" id="_151970502192867" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
     <jpa:entity compositePrimaryKeyClass="RolPK" abs="false" class="Rol" v="true" jbn="false" xre="false" m="false" rootElement="_151970502192867" id="_1519706310435">
         <jpa:ath>Antonio Carrasco Valero Copyright 2018</jpa:ath>
         <jpa:attributes>
@@ -131,7 +131,7 @@
         </jpa:nq>
     </jpa:entity>
     <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
- * hortacasa Antonio Carrasco Valero Copyright 2018
+ * stealmodel_jpa Antonio Carrasco Valero Copyright 2018
  */</jpa:snp>
     <jpa:c>
         <ct>java.util.List</ct>

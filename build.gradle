@@ -13,7 +13,7 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'hortacasa'
+    baseName = 'stealmodel_jpa'
     version =  '0.1.0'
 }
 
