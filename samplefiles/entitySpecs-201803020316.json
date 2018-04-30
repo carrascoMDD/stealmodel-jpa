@@ -1,0 +1,1267 @@
+[
+  {
+    "specType": "ENTITY",
+    "fullName": "org.modeldd.hortacasa.domain.entities.Usuario",
+    "shortName": "Usuario",
+    "classAnnotations": [
+      {
+        "specType": "ANNOTATION",
+        "fullName": "javax.persistence.Entity",
+        "shortName": "Entity",
+        "annotatedMetaType": "CLASS",
+        "parameters": [
+          {
+            "specType": "PARAMETER",
+            "parameterType": "STRING",
+            "parameterName": "name",
+            "multiple": false,
+            "stringValue": ""
+          }
+        ]
+      }
+    ],
+    "fieldSpecs": [
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.id",
+        "shortName": "id",
+        "typeFullName": "java.lang.Integer",
+        "typeShortName": "Integer",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Id",
+            "shortName": "Id",
+            "annotatedMetaType": "FIELD",
+            "parameters": null
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.GeneratedValue",
+            "shortName": "GeneratedValue",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "strategy",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.GenerationType",
+                "shortEnumName": "GenerationType",
+                "enumValue": "AUTO"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.login",
+        "shortName": "login",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 32
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.nombre",
+        "shortName": "nombre",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 32
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.apellidos",
+        "shortName": "apellidos",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 64
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.email",
+        "shortName": "email",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 96
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.salt",
+        "shortName": "salt",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 64
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.password",
+        "shortName": "password",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 256
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.fechaCreacion",
+        "shortName": "fechaCreacion",
+        "typeFullName": "java.util.Calendar",
+        "typeShortName": "Calendar",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Temporal",
+            "shortName": "Temporal",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "value",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.TemporalType",
+                "shortEnumName": "TemporalType",
+                "enumValue": "TIMESTAMP"
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Column",
+            "shortName": "Column",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "nullable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "columnDefinition",
+                "multiple": false,
+                "stringValue": "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "insertable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "updatable",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "unique",
+                "multiple": false,
+                "booleanValue": false
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "precision",
+                "multiple": false,
+                "integerValue": 0
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "name",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "length",
+                "multiple": false,
+                "integerValue": 255
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "table",
+                "multiple": false,
+                "stringValue": ""
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "INTEGER",
+                "parameterName": "scale",
+                "multiple": false,
+                "integerValue": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.fechaUltimoLogin",
+        "shortName": "fechaUltimoLogin",
+        "typeFullName": "java.util.Calendar",
+        "typeShortName": "Calendar",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Temporal",
+            "shortName": "Temporal",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "value",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.TemporalType",
+                "shortEnumName": "TemporalType",
+                "enumValue": "TIMESTAMP"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Usuario.autorizaciones",
+        "shortName": "autorizaciones",
+        "typeFullName": "java.util.List",
+        "typeShortName": "List",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.OneToMany",
+            "shortName": "OneToMany",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "mappedBy",
+                "multiple": false,
+                "stringValue": "usuario"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "LAZY"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "cascade",
+                "multiple": true,
+                "fullEnumName": "javax.persistence.CascadeType",
+                "shortEnumName": "CascadeType",
+                "enumValues": [
+                  "DETACH",
+                  "REMOVE"
+                ]
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "CLASS",
+                "parameterName": "targetEntity",
+                "multiple": false,
+                "fullClassName": "org.modeldd.hortacasa.domain.entities.Autorizacion",
+                "shortClassName": "Autorizacion"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "orphanRemoval",
+                "multiple": false,
+                "booleanValue": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "methodSpecs": null
+  },
+  {
+    "specType": "ENTITY",
+    "fullName": "org.modeldd.hortacasa.domain.entities.Rol",
+    "shortName": "Rol",
+    "classAnnotations": [
+      {
+        "specType": "ANNOTATION",
+        "fullName": "javax.persistence.Entity",
+        "shortName": "Entity",
+        "annotatedMetaType": "CLASS",
+        "parameters": [
+          {
+            "specType": "PARAMETER",
+            "parameterType": "STRING",
+            "parameterName": "name",
+            "multiple": false,
+            "stringValue": ""
+          }
+        ]
+      }
+    ],
+    "fieldSpecs": [
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.id",
+        "shortName": "id",
+        "typeFullName": "java.lang.Integer",
+        "typeShortName": "Integer",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Id",
+            "shortName": "Id",
+            "annotatedMetaType": "FIELD",
+            "parameters": null
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.GeneratedValue",
+            "shortName": "GeneratedValue",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "strategy",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.GenerationType",
+                "shortEnumName": "GenerationType",
+                "enumValue": "AUTO"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.nombre",
+        "shortName": "nombre",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Rol.rolinterno",
+        "shortName": "rolinterno",
+        "typeFullName": "java.lang.String",
+        "typeShortName": "String",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Basic",
+            "shortName": "Basic",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "methodSpecs": null
+  },
+  {
+    "specType": "ENTITY",
+    "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion",
+    "shortName": "Autorizacion",
+    "classAnnotations": [
+      {
+        "specType": "ANNOTATION",
+        "fullName": "javax.persistence.Entity",
+        "shortName": "Entity",
+        "annotatedMetaType": "CLASS",
+        "parameters": [
+          {
+            "specType": "PARAMETER",
+            "parameterType": "STRING",
+            "parameterName": "name",
+            "multiple": false,
+            "stringValue": ""
+          }
+        ]
+      }
+    ],
+    "fieldSpecs": [
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.id",
+        "shortName": "id",
+        "typeFullName": "java.lang.Integer",
+        "typeShortName": "Integer",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.Id",
+            "shortName": "Id",
+            "annotatedMetaType": "FIELD",
+            "parameters": null
+          },
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.GeneratedValue",
+            "shortName": "GeneratedValue",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "strategy",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.GenerationType",
+                "shortEnumName": "GenerationType",
+                "enumValue": "AUTO"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "STRING",
+                "parameterName": "generator",
+                "multiple": false,
+                "stringValue": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.usuario",
+        "shortName": "usuario",
+        "typeFullName": "org.modeldd.hortacasa.domain.entities.Usuario",
+        "typeShortName": "Usuario",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.ManyToOne",
+            "shortName": "ManyToOne",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "cascade",
+                "multiple": true,
+                "fullEnumName": "javax.persistence.CascadeType",
+                "shortEnumName": "CascadeType",
+                "enumValues": []
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "CLASS",
+                "parameterName": "targetEntity",
+                "multiple": false,
+                "fullClassName": "org.modeldd.hortacasa.domain.entities.Usuario",
+                "shortClassName": "Usuario"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "specType": "FIELD",
+        "fullName": "org.modeldd.hortacasa.domain.entities.Autorizacion.rol",
+        "shortName": "rol",
+        "typeFullName": "org.modeldd.hortacasa.domain.entities.Rol",
+        "typeShortName": "Rol",
+        "fieldAnnotations": [
+          {
+            "specType": "ANNOTATION",
+            "fullName": "javax.persistence.ManyToOne",
+            "shortName": "ManyToOne",
+            "annotatedMetaType": "FIELD",
+            "parameters": [
+              {
+                "specType": "PARAMETER",
+                "parameterType": "BOOLEAN",
+                "parameterName": "optional",
+                "multiple": false,
+                "booleanValue": true
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "fetch",
+                "multiple": false,
+                "fullEnumName": "javax.persistence.FetchType",
+                "shortEnumName": "FetchType",
+                "enumValue": "EAGER"
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "ENUM",
+                "parameterName": "cascade",
+                "multiple": true,
+                "fullEnumName": "javax.persistence.CascadeType",
+                "shortEnumName": "CascadeType",
+                "enumValues": []
+              },
+              {
+                "specType": "PARAMETER",
+                "parameterType": "CLASS",
+                "parameterName": "targetEntity",
+                "multiple": false,
+                "fullClassName": "org.modeldd.hortacasa.domain.entities.Rol",
+                "shortClassName": "Rol"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "methodSpecs": null
+  }
+]
